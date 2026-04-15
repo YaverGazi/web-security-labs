@@ -1,5 +1,5 @@
 # web-security-labs
-
+# Performed SQL Injection exploitation in a controlled lab environment (PortSwigger Web Security Academy).
 # SQL Injection - WHERE Clause Bypass
 
 ## Objective
